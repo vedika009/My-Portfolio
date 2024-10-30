@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #a39193;
+        margin: 0;
+    }
+    .main-container {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+    .left-image-container, .right-text-container {
+        width: 50%;
+        height: 100%;
+    }
+    .left-image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .right-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #0e0d0d;
+        text-align: center;
+    }
+    .name { font-size: 3.5em; }
+    .title { font-size: 1.5em; font-weight: normal; }
+    .linkedin-profile {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1em;
+        background-color: #6d6565;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .linkedin-profile:hover {
+        background-color: #555;
+    }
+    .about-section {
+        padding: 40px 20px;
+        text-align: center;
+        color: #080707;
+        max-width: 800px;
+    }
+    .about-section h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .about-section h2:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: #333;
+        margin: 10px auto;
+    }
+    .about-section p {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+    .skills-section {
+        padding: 40px 20px;
+        text-align: center;
+        color: #080707;
+        max-width: 800px;
+    }
+    .skills-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .skills-section h2:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: #333;
+        margin: 10px auto;
+    }
+    .skills-collage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; 
+    }
+    .skill {
+        position: relative;
+        width: 70px; 
+        height: 70px; 
+        overflow: hidden;
+    }
+    .skill img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s;
+    }
+    .skill:hover img {
+        transform: scale(1.1) translate(-50%, -50%); 
+    }
+    .projects-section {
+        padding: 40px 20px;
+        text-align: left;
+        color: #080707;
+        max-width: 800px;
+    }
+    .projects-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .projects-section h2:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: #333;
+        margin: 10px auto;
+    }
+    .project {
+        margin: 20px 0;
+        font-size: 1.2em;
+        display: flex;
+        justify-content: space-between; 
+        align-items: left; 
+    }
+    .project img {
+        width: 24px;
+        height: 24px; 
+        margin-right: 10px; 
+    }
+    .project-description {
+        font-size: 1em; 
+        color: #0e0c0c; 
+        margin-top: 5px; 
+    }
+    .contact-section {
+        padding: 40px 20px;
+        text-align: left;
+        color: #080707;
+        max-width: 800px;
+    }
+    .contact-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .contact-section h2:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: #333;
+        margin: 10px auto;
+    }
+    .contact-item {
+        margin: 10px 0;
+        font-size: 1.2em;
+    }
+        
+</style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="left-image-container">
+        <img src="vedika1.jpg" alt="Portfolio Image">
+    </div>
+
+    <div class="right-text-container">
+        <div class="name">Vedika Mishra</div>
+        <div class="title">Software Developer</div>
+        <a href="https://www.linkedin.com/in/vedikamishra009/" class="linkedin-profile" target="_blank">LinkedIn Profile</a>
+    </div>
+</div>
+
+<div class="about-section">
+    <h2>About</h2>
+    <p>Hello! I'm a Computer Science student with a passion for developing impactful software that’s both efficient and scalable. With a strong foundation in Java and Python, I’ve spent countless hours refining my skills in data structures, algorithms, and object-oriented programming. My experience extends to Unix/Linux environments, giving me a solid grasp of software design and hands-on troubleshooting. I’m actively looking for internship opportunities where I can apply my technical knowledge and contribute meaningfully to a team. Let’s connect!</p>
+</div>
+
+<div class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-collage">
+        <div class="skill">
+            <img src="java-logo.png" alt="Java Logo">
+        </div>
+        <div class="skill">
+            <img src="html-logo.png" alt="HTML Logo">
+        </div>
+        <div class="skill">
+            <img src="css-logo.png" alt="CSS Logo">
+        </div>
+        <div class="skill">
+            <img src="javascript-logo.png" alt="JavaScript Logo">
+        </div>
+        <div class="skill">
+            <img src="python-logo.png" alt="Python Logo">
+        </div>
+        <div class="skill">
+            <img src="sql-logo.png" alt="SQL Logo">
+        </div>
+        <div class="skill">
+            <img src="git-logo.png" alt="Git Logo">
+        </div>
+        <div class="skill">
+            <img src="intellij-logo.png" alt="IntelliJ Logo">
+        </div>
+        <div class="skill">
+            <img src="vs-logo.png" alt="VSCode Logo">
+        </div>
+    </div>
+</div>
+
+<div class="projects-section">
+    <h2 align = "center">Projects</h2>
+    <div class="project">
+        <div>
+            <img src="blockchain-logo.png" alt="Blockchain Logo"> 
+            Blockchain From Scratch
+        </div>
+        <a href="https://github.com/vedika009/Blockchain" target="_blank">GitHub</a>
+    </div>
+    <div class="project-description">
+        <strong>Technologies:</strong> Python, Flask, JavaScript, Cryptography<br>
+        Efficient Proof-of-Work Consensus: Developed and integrated a proof-of-work consensus mechanism to ensure the security and integrity of the blockchain, preventing fraudulent activities and ensuring decentralized agreement.<br>
+        Transaction and Data Integrity: Implemented mechanisms for transaction validation and data integrity, ensuring that all transactions are securely recorded and immutable once added to the blockchain.
+    </div>
+    
+    <div class="project">
+        <div>
+            <img src="encryption-tool-logo.png" alt="Encryption Tool Logo"> 
+            File Encryption Tool
+        </div>
+        <a href="https://github.com/vedika009/File-Encryption-tool" target="_blank">GitHub</a>
+    </div>
+    <div class="project-description">
+        <strong>Technologies:</strong> Python, Cryptography, Tkinter<br>
+        Created a user-friendly file encryption tool in Python, utilizing AES-256 to securely encrypt and decrypt files, with an intuitive Tkinter interface for efficient file handling.<br>
+        Implemented encryption methods and straightforward controls, ensuring users can easily manage and protect their sensitive information.
+    </div>
+    
+    <div class="project">
+        <div>
+            <img src="flaco-logo.png" alt="Flaco Logo"> 
+            Flaco – Music Player
+        </div>
+        <a href="https://github.com/vedika009/Flaco-Player" target="_blank">GitHub</a>
+    </div>
+    <div class="project-description">
+        <strong>Technologies:</strong> Python, Pygame, Tkinter<br>
+        Developed a Python-based audio player featuring advanced GUI using Tkinter, capable of handling various audio formats including FLAC, utilizing Pygame for audio playback and PyCaw for system volume control.<br>
+        Implemented audio playback management, providing a user-friendly interface to play, pause, and control volume, ensuring high-quality audio experience for FLAC and other audio formats.
+    </div>
+</div>
+
+<div class="contact-section">
+    <h2 align = center>Contact Me</h2>
+    <div class="contact-item">
+        <strong>Email:</strong>
+        <span>vedikamishra009@gmail.com</span>
+    </div>
+    <div class="contact-item">
+        <strong>LinkedIn:</strong>
+        <span>https://www.linkedin.com/in/vedikamishra009/</span>
+    </div>
+    <div class="contact-item">
+        <strong>Phone:</strong>
+        <span>(+91) 7649066807</span>
+    </div>
+</div>
+
+</body>
+</html>
